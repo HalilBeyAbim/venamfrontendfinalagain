@@ -1,0 +1,112 @@
+@media(max-width:576px) {
+    .center-hdr {
+        display: none;
+    }
+
+    .header-left-drop {
+        margin-left: 25px;
+    }
+
+    .header-right-icons {
+        margin-right: 35px;
+    }
+}
+
+
+
+.commom-position-icon {
+
+    position: relative;
+
+    span {
+        position: absolute;
+        background-color: #F7BA01;
+        color: #2d2d2d;
+        padding: 3px 5px;
+        border-radius: 50%;
+        top: -5px;
+        left: 31px;
+        font-size: 8px;
+    }
+}
+
+.active-color {
+    background-color: #252525;
+    color: #fff;
+}
+
+.active {
+    &::before {
+        transform: rotate(-225deg) !important;
+        top: 22px !important;
+    }
+
+    .option {
+        display: block !important;
+    }
+}
+
+.dr-active {
+    .options {
+        display: block !important;
+    }
+}
+
+header #header-top {
+    background-color: #eee;
+    padding: 5px 0;
+
+    .left {
+        .dropdown-toggle {
+            text-decoration: none;
+            font-size: 13px;
+            color: #656565;
+            font-weight: 400;
+            cursor: pointer;
+            font-family: 'Jost', sans-serif;
+        }
+
+        ul {
+            li {
+                color: #6f6f6f;
+                font-size: 12px;
+                font-weight: 400;
+                padding: 3px 0;
+                font-family: 'Jost', sans-serif;
+                box-shadow: none;
+
+                &:hover {
+                    background-color: #f8f9fa;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            .dropdown-item {
+
+                &:focus,
+                &:hover {
+                    background-color: #f8f9fa !important;
+                }
+            }
+        }
+    }
+
+    .rigth {
+        .fa-brands {
+            cursor: pointer !important;
+            font-size: 15px !important;
+            color: #868686 !important;
+
+            &:hover {
+                font-size: 17px !important;
+                transform: translateY(5%);
+                transition: .5s;
+            }
+        }
+    }
+
+    span {
+        color: #CECECE;
+    }
+}
